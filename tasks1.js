@@ -10,28 +10,30 @@ console.log("lastname =" ,lastname);
 console.log("age=" ,age);
 
 //2
-x = "25";
+let x = "25";
 console.log(typeof x);
-a = Number(x) + 10;
+let a = Number(x) + 10;
 console.log(a);
 
 //3
-a = 10;
-b = 20;
-console.log("Value of a before swapping:",a);
+let b = 10;
+let c = 20;
 console.log("Value of b before swapping:",b);
-[a,b] = [b,a];
-console.log("Value of a after swapping:",a);
+console.log("Value of c before swapping:",c);
+[b,c] = [c,b];
 console.log("Value of b after swapping:",b);
+console.log("Value of c after swapping:",c);
 
 //4
-x = 10;
-console.log(x == 8);
-console.log(x != 10);
-console.log(x == 10);
-console.log(x <= 10);
-console.log(x >= 10);
-
+let y = "20";
+if(y)
+{
+    console.log("truthy");
+}
+else
+{
+    console.log("falsy");
+}
 
 
 
