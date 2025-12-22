@@ -28,7 +28,7 @@ else if(c > a && c > b)
 }
 
 //3
-for(i = 0; i<=100 ; i++)
+for(let i = 1; i<=100 ; i++)
 {
     if(i % 5 != 0)
     {
@@ -39,24 +39,44 @@ for(i = 0; i<=100 ; i++)
 //4
 let d = 10;
 let f = 20;
-let operation = "+";
+let operation = "/";
 switch(operation)
 {
     case "+":
     console.log("Addition of number is:", d + f);
     break;
+
     case "-":
     console.log("substraction of number is:",d - f);
     break;
+
     case "*":
     console.log("Multiplication of number is:", d * f);
     break;
+
     case "/":
-    console.log("Division of number is:",d / f);
+        if(f === 0)
+        {
+            console.log("Error: Division by zero is not Allowed");
+        }
+        else
+            {
+                console.log("Division of number is:",d / f);
+            }
     break;
+
     case "%":
-    console.log("Mod:",d % f);
+         if(f === 0)
+        {
+            console.log("Error: Modulus by zero is not Allowed");
+        }
+        else
+            {
+                console.log("Mod:",d % f);
+            }
     break;
+
     default:
         console.log("Invalid Operation performed");
 }
+
