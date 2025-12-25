@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Activity Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "container">
+        <h2>Smart Activity Tracker</h2>
+
+        <div class = "add-activity">
+            <input type = "text" id="activityinput", placeholder="Enter activity">
+            <button id = "addbtn" disabled>Add</button>
+            <p class ="error" id = "errorText"></p>
+        </div>
+
+         <div class="status">
+            <p>Total Activities: <span id = "total">0</span></p>
+            <p>Completed: <span id = "completed">0</span></p>
+            <p>Pending: <span id = "pending">0</span></p>
+        </div>
+    </div>
+
+        <div class = "activity-cards" id = "activitycards"></div>
+
+       
+    <script src="script.js"></script>
+</body>
+</html>

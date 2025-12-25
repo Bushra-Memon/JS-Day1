@@ -1,0 +1,79 @@
+body{
+    background: #faeaea;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.add-activity{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-activity input {
+    flex: 1;
+    padding: 10px;
+}
+
+.add-activity button:disabled{
+    cursor: not-allowed;
+    
+}
+
+.add-activity button{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+
+.activity-cards{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.activity-card{
+    padding: 10px;
+    border-radius:  10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.toggle-btn{
+    padding:6px 10px;
+    border: none;
+    border-radius: 6px;
+    align-self: center;
+    margin-top: 8px;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.status{
+    margin-bottom:15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.status p {
+    margin: 0 10px;
+}
+
+
