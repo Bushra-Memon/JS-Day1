@@ -4,17 +4,23 @@ const activitycards= document.getElementById('activitycards');
 const totalEl = document.getElementById('total');
 const completedEl = document.getElementById('completed');
 const pendingEl = document.getElementById('pending');
-const errortext= document.getElementById('errortext');
+const errortext= document.getElementById('errorText');
 
 let activities = [];
 
 //Enable/disable button
+errortext.textContent = 'Activity cannot be empty!';
 activityinput.addEventListener('input',() => {
     const val = activityinput.value.trim();
     if(val === '')
     {
         addbtn.disabled = true;
         errortext.textContent = '';
+    }
+    else if(val.length < 3)
+    {
+        addbtn.disabled = true;
+        errortext.textContent = 'Activity name is too short!';
     }
     else
     {
@@ -25,10 +31,9 @@ activityinput.addEventListener('input',() => {
 
 //Add Activity
 addbtn.addEventListener('click',() => {
-    const val = activityinput.value.trim()
+    const val = activityinput.value.trim();
     if(val === '')
     {
-        errortext.textContent = 'Activity cannot be empty!';
         return;
     }
 
@@ -39,7 +44,7 @@ addbtn.addEventListener('click',() => {
 
     };
     activities.push(activity);
-    activityinput.value = " ";
+    activityinput.value = "";
     addbtn.disabled = true;
     renderActivites();
 });
@@ -88,6 +93,7 @@ totalEl.textContent = total;
 completedEl.textContent = completed;
 pendingEl.textContent = pending;
 }
+
 
 
 
